@@ -6,9 +6,11 @@
 
 <script>
 import Home from './components/Home.vue'
+import Vuetify from "vuetify";
 
 export default {
   name: 'App',
+  vuetify: new Vuetify(),
   components: {
     Home
   }

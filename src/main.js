@@ -3,10 +3,15 @@ import App from './App.vue'
 import VueRouter from "vue-router"
 import './plugins/apexchart'
 import './plugins/vueButstrap'
+import './plugins/vuerify'
 import RequestMain from "./components/Request/RequestMain";
 import ResursMain from "./components/Resurs/ResursMain";
 import PlanningMain from "./components/Plannig/PlanningMain";
 import HomeMain from "./components/HomeMain";
+
+
+//Глобальная шина событий
+Vue.prototype.$eventBus = new Vue();
 
 Vue.config.productionTip = false
 
